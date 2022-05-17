@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Baloo 2', cursive;
+}
+
+body {
+    background: #293241;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+.container {  
+    height: 50vh;
+    margin:10px;
+    display:flex; 
+    flex-direction: column;
+}
+
+.foto {
+    width:25em;
+    height:auto;
+    border-radius:100%;
+    border:3px solid whitesmoke;
+}
+
+.social {
+    display:flex;
+    justify-content: space-around;
+    margin-top:10px;   
+    
+    
+}
+.social img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+    margin:10px;  
+}
+.logo:hover {
+    transform:rotate(360deg);
+}
+.logo {
+    
+    transition:all 2s;
+}
+
+
+
+/* Mobile. */
+@media only screen and (max-width: 840px) {
+
+    .container { 
+        height: 50vh;
+        margin:10px;
+        flex-direction: row;
+        }
+    
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+
+}
